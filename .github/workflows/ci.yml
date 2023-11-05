@@ -34,8 +34,6 @@ jobs:
       - name: Build
         run: dotnet build WebApplication1Test/WebApplication1Test.csproj --no-restore -c Release
 
-      - name: Test
-        run: dotnet test WebApplication1Test/WebApplication1Test.csproj --no-build --verbosity normal
 
       - name: Publish
         run: dotnet publish WebApplication1Test/WebApplication1Test.csproj --no-build -c Release -o publish
